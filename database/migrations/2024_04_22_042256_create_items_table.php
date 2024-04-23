@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('lists', function (Blueprint $table) {
+        Schema::create('items', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('color_id');
-            $table->string('contents', 255);
+            $table->unsignedBigInteger('color_id')->nullable();
+            $table->string('contents');
             $table->tinyInteger('purchased')->comment('0: Not purchased, 1: Purchased');
             $table->timestamps();
         });
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('lists');
+        Schema::dropIfExists('items');
     }
 };
