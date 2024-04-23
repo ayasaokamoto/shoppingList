@@ -16,7 +16,7 @@ return new class extends Migration
             $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('color_id')->nullable();
             $table->string('contents');
-            $table->tinyInteger('purchased')->comment('0: Not purchased, 1: Purchased');
+            $table->tinyInteger('purchased')->comment('0: Not purchased, 1: Purchased') ->default("0");
             $table->timestamps();
         });
     }
