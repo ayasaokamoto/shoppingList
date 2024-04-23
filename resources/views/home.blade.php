@@ -11,7 +11,7 @@
         <h1>かいものリスト</h1>
 
         <div class="box">
-            <button type="button" class="user-icon"><img src="img/user-icon.svg" alt="ユーザーアイコン""></button>
+            <button type="button" class="user-icon"><img src="img/user-icon.svg" alt="ユーザーアイコン"></button>
             <button type="button" class="logout-icon"><img src="img/logout-icon.svg" alt="ログアウトアイコン"></button>
 	    </div>
     </header>
@@ -43,11 +43,12 @@
                 </button>
             </form>
             <div class="shopping-form">
+                @foreach ($items as $item)
                 <div class="item">
                     <div class="item-detail">
                         <div class="item-left">
                             <div class="circle-icon" id="icon"></div>
-                            <input type="text" name="list-content"placeholder="" value="テスト">
+                            <input type="text" name="list-content" placeholder="" value="{{ $item->contents }}">
                             <input type="hidden" name="id" value="">
                         </div>
                         <div class="item-right">
@@ -60,6 +61,7 @@
                         </div>
                     </div>
                 </div>
+                @endforeach
             </div>
 
             <!-- フローティングボタン(item追加ボタン) -->
