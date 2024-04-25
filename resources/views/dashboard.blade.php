@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('かう') }}
         </h2>
     </x-slot>
 
@@ -9,7 +9,25 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    {{ __("You're logged in!") }}
+                    <!-- {{ __("ここにitemを表示する") }} -->
+                    <div class="shopping-form">
+                        @foreach ($items as $item)
+                        <div class="item">
+                            <div class="item-detail">
+                                <div class="item-left">
+                                    <div class="circle-icon" id="icon"></div>
+                                    <input type="text" name="list-content" placeholder="" value="{{ $item->contents }}">
+                                    <input type="hidden" name="id" value="">
+                                </div>
+                                <div class="item-right">
+                                    <button type="button" class="modal-trigger">
+                                        <img src="img/dot.png" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+                    </div>
                 </div>
             </div>
         </div>
