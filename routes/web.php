@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\ModalController;
+use App\Http\Controllers\ModalwindowController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -24,4 +24,4 @@ require __DIR__.'/auth.php';
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::get('/modal', [ModalController::class, 'modal']);
+Route::get('/modalwindow', [ModalwindowController::class, 'modalwindow']);

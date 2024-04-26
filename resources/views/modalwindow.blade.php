@@ -1,3 +1,3 @@
 <x-guest-layout>
-    @livewire('modal')
+    @livewire('modalwindow')
 </x-guest-layout>
