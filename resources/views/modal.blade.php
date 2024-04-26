@@ -1,4 +1,3 @@
-
 <x-guest-layout>
-    こんにちは
+    @livewire('modal')
 </x-guest-layout>
