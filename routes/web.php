@@ -23,5 +23,3 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
-
-Route::get('/modalwindow', [ModalwindowController::class, 'modalwindow']);

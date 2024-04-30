@@ -20,7 +20,7 @@
                                     <input type="hidden" name="id" value="">
                                 </div>
                                 <div>
-                                    @livewire('modalwindow')
+                                @livewire('modalwindow', ['itemId' => $item->id])
                                 </div>
                             </div>
                         </div>

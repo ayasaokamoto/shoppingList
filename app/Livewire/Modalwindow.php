@@ -3,6 +3,7 @@
 namespace app\Livewire;
 
 use Livewire\Component;
+use App\Models\Item;
 
 class Modalwindow extends Component
 {
@@ -20,6 +21,15 @@ class Modalwindow extends Component
 
     public function closeModalwindow()
     {
+        $this->showModalwindow = false;
+    }
+
+    public $itemId;
+
+    public function check_purchased($itemId)
+    {
+        $item = Item::findOrFail($itemId);
+        $item->update(['purchased' => 1]);
         $this->showModalwindow = false;
     }
 }
