@@ -32,4 +32,10 @@ class Modalwindow extends Component
         $item->update(['purchased' => 1]);
         $this->showModalwindow = false;
     }
+
+    public function delete($itemId)
+    {
+        Item::findOrFail($itemId)->delete();
+        $this->showModalwindow = false;
+    }
 }

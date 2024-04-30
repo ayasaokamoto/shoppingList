@@ -7,7 +7,7 @@
         <div class="modal-overlay">
             <div class="modal">
                 <button wire:click="check_purchased({{ $itemId }})" type="button" class="modal-button">購入ずみに移動</button>
-                <button wire:click="delete()" type="button" class="modal-button">削除</button>
+                <button wire:click="delete({{ $itemId }})" type="button" class="modal-button">削除</button>
                 <button wire:click="closeModalwindow()" type="button" class="modal-button">キャンセル</button>
             </div>
         </div>
