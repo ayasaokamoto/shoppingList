@@ -1,6 +1,6 @@
 <div>
-    <button wire:click="openModalwindow()" type="button" class="px-4 py-2 font-bold text-white bg-blue-500 rounded hover:bg-blue-700">
-        モーダルを表示
+    <button wire:click="openModalwindow()" type="button" class="px-4 py-2 font-bold bg-blue-500 rounded hover:bg-blue-700">
+        <img src="img/dot.png" alt="">
     </button>
 
     @if($showModalwindow)

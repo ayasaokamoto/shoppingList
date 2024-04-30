@@ -19,10 +19,8 @@
                                     <input type="text" name="list-content" placeholder="" value="{{ $item->contents }}">
                                     <input type="hidden" name="id" value="">
                                 </div>
-                                <div class="item-right">
-                                    <button type="button" class="modal-trigger">
-                                        <img src="img/dot.png" alt="">
-                                    </button>
+                                <div>
+                                    @livewire('modalwindow')
                                 </div>
                             </div>
                         </div>
