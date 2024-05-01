@@ -11,7 +11,13 @@
 }
 
 .color-modal {
-    border-radius: 5px;
+    display: flex;
+    border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.color-add-icon {
+    background-color: #a9a9a9;
+    color: black;
 }
 

@@ -11,7 +11,16 @@
                     <button wire:click="selectColor('{{ $color }}')" class="color-icon" style="background-color: {{ $color }}"></button>
                 @endforeach
             @endif
+            @if(count($colors) < 5)
+            <div class="select-color">
+                <button wire:click="openColorPickerModal()" class="color-icon color-add-icon" >+</button>
+            </div>
+            @endif
         </div>
     </div>
+    @endif
+    
+    @if($colorPickerModal)
+        @livewire('color_picker')
     @endif
 </div>
