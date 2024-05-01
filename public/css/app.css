@@ -123,40 +123,7 @@ header h1 {
     margin-right: 20px;
 }
 
-/*  フローティングボタン
-----------------------------------  */
-/* .floating-button {
-    width: 64px;
-    height: 64px;
-    background: #ECCF36;
-    border-radius: 50%;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1;
-}
-.plus-icon {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 1;
-    width: 24px;
-    height: 3px;
-    background: #fff;
-    border-radius: 0.1em;
-    position: relative;
-}
-
-.plus-icon::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff;
-    transform: rotate(90deg);
-} */
-
+/*  追加ボタン ----------------------------------  */
 .add-item {
     position: relative;
     display: flex; /* 要素を水平に配置 */
