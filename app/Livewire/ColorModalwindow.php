@@ -10,18 +10,17 @@ class ColorModalwindow extends Component
 {
     public $showColorModalwindow = false;
     public $colors;
-    public $selectedColor = '#000000'; //デフォルトカラー黒
+    public $selectedColor = "#a9a9a9"; //デフォルトカラー黒
+    public $colorPickerModal = false;
 
     public function render()
     {
         return view('livewire.color_modalwindow');
     }
 
+    // カラー選択モーダル
     public function openColorModalwindow()
     {
-        // 全てのアイテムに関連したモーダルを閉じる
-        $this->emit('closeAllModals');
-        
         $this->showColorModalwindow = true;
         // colorsテーブルからユーザーに関連付けられたカラーコードを取得
         $this->colors = Color::where('user_id', auth()->id())->pluck('code')->toArray();
@@ -35,7 +34,18 @@ class ColorModalwindow extends Component
     public function selectColor($color)
     {
         $this->selectedColor = $color;
-        $this->closeColorModalwindow(); // カラーが選択されたらモーダルを閉じる
+        $this->closeColorModalwindow();
         $this->render();
+    }
+
+    // カラーピッカーで選択したカラーコードをテーブルに追加
+    public function addColor($color)
+    {
+        // colorsテーブルに新しい色を追加
+        Color::create([
+            'user_id' => auth()->id(),
+            'code' => $color,
+        ]);
+        $this->closeColorModalwindow();
     }
 }

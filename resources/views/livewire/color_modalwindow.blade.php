@@ -12,15 +12,14 @@
                 @endforeach
             @endif
             @if(count($colors) < 5)
-            <div class="select-color">
-                <button wire:click="openColorPickerModal()" class="color-icon color-add-icon" >+</button>
-            </div>
+                <div class="color-picker-wrapper">
+                    <div class="color-picker-wrapper">
+                        <input type="color" class="color-picker" wire:model="selectedColor" wire:change="addColor($event.target.value)">
+                        <div class="color-picker-text">+</div>
+                    </div>
+                </div>
             @endif
         </div>
     </div>
-    @endif
-    
-    @if($colorPickerModal)
-        @livewire('color_picker')
     @endif
 </div>
