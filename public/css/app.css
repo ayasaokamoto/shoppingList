@@ -162,6 +162,7 @@ header h1 {
     display: flex; /* 要素を水平に配置 */
     justify-content: flex-end; /* 要素を右端に配置 */
     margin-top: 10px; /* 上方向の余白を追加 */
+    margin-right: 34px;
 }
 
 .add-item-button {

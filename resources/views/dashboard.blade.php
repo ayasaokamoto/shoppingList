@@ -26,9 +26,7 @@
                         </div>
                         @endforeach
                     </div>
-                    <div class="add-item">
-                        <button class="add-item-button">+</button>
-                    </div>
+                    @livewire('add-item')
                 </div>
             </div>
         </div>
