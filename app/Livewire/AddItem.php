@@ -10,7 +10,7 @@ class AddItem extends Component
 {
     public function render()
     {
-        return view('livewire.add-item');
+        return view('livewire.add_item');
     }
 
     public function addNewItem()
