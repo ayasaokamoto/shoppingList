@@ -26,6 +26,9 @@
                         </div>
                         @endforeach
                     </div>
+                    <div class="add-item">
+                        <button class="add-item-button">+</button>
+                    </div>
                 </div>
             </div>
         </div>

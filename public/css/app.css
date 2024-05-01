@@ -125,7 +125,7 @@ header h1 {
 
 /*  フローティングボタン
 ----------------------------------  */
-.floating-button {
+/* .floating-button {
     width: 64px;
     height: 64px;
     background: #ECCF36;
@@ -155,4 +155,28 @@ header h1 {
     height: 100%;
     background: #fff;
     transform: rotate(90deg);
+} */
+
+.add-item {
+    position: relative;
+    display: flex; /* 要素を水平に配置 */
+    justify-content: flex-end; /* 要素を右端に配置 */
+    margin-top: 10px; /* 上方向の余白を追加 */
 }
+
+.add-item-button {
+    background-color: #a4a3a336;
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* ボタンの幅を調整 */
+    height: 40px; /* ボタンの高さを調整 */
+    cursor: pointer;
+    font-size: 24px; /* プラス記号の大きさを調整 */
+    line-height: 1; /* 垂直方向の中央揃え */
+}
+
+.add-item-button:hover {
+    background-color: #4f4c4c; /* ボタンがホバーされた時の背景色 */
+    color: #ffffff;
+}
+
