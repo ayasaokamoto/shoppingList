@@ -14,7 +14,6 @@ return new class extends Migration
         Schema::create('colors', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->string('color_name');
             $table->string('code', 7);
             $table->timestamps();
         });

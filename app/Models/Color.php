@@ -13,7 +13,6 @@ class Color extends Model
 
     protected $fillable = [
         "user_id",
-        "color_name",
         "code"
     ];
 
