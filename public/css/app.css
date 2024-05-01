@@ -148,3 +148,25 @@ header h1 {
     color: #ffffff;
 }
 
+/*  カラー選択ボタン ----------------------------------  */
+.select-color {
+    margin-right: 20px;
+}
+
+.select-color-button {
+    border: none;
+    border-radius: 50%;
+    width: 40px; /* ボタンの幅を調整 */
+    height: 40px; /* ボタンの高さを調整 */
+}
+
+.color-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    margin: 5px; /* アイコン間の余白を調整 */
+}
+
+
+

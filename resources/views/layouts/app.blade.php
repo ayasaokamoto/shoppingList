@@ -17,6 +17,7 @@
         <!-- Css -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/modal.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/color_modal.css') }}">
         @livewireStyles
     </head>
     <body class="font-sans antialiased font-sans text-gray-900 antialiased">

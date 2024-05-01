@@ -15,7 +15,7 @@
                         <div class="item">
                             <div class="item-detail">
                                 <div class="item-left">
-                                    <div class="circle-icon" id="icon"></div>
+                                    @livewire('color_modalwindow')
                                     <input type="text" name="list-content" placeholder="" value="{{ $item->contents }}">
                                     <input type="hidden" name="id" value="">
                                 </div>
