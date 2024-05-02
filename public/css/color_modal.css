@@ -1,3 +1,4 @@
+/* -------- カラーモーダル -------- */
 .color-modal-overlay {
     /* position: fixed;
     top: 0;
@@ -16,6 +17,8 @@
     border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
+/* --------- カラーピッカー --------- */
 
 .color-picker-wrapper {
     width: 40px;
@@ -47,4 +50,21 @@
     font-size: 18px;
     color: black;
 }
+
+/* --------- カラー編集ボタン ----------- */
+
+.color-edit-button {
+    margin: 5px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc; /* ボタンの背景色 */
+    color: #000; /* ボタンのテキスト色 */
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
 
