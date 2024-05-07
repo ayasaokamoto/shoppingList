@@ -63,7 +63,7 @@
 
         <!-- deleteボタンが押されている時はOKボタンを表示 -->
         @if($showDeleteOkButton)
-            <button class="color-edit-button" wire:click="deletionComplete">OK</button>
+            <button class="ok-button" wire:click="deletionComplete">OK</button>
         @endif
         </div>
     </div>

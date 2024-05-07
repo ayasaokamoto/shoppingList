@@ -67,4 +67,29 @@
     transition: background-color 0.3s ease;
 }
 
+.ok-button {
+    margin: 5px;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc; /* ボタンの背景色 */
+    color: #000; /* ボタンのテキスト色 */
+    border: none;
+    font-size: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.color-item {
+    position: relative;
+}
+
+.delete-icon {
+    position: absolute; /* 絶対位置指定 */
+    top: 50%; /* 親要素の上端からの距離を 50% に設定 */
+    left: 50%; /* 親要素の左端からの距離を 50% に設定 */
+    transform: translate(-50%, -50%); /* 中央揃え */
+}
+
 
