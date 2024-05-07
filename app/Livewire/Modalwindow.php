@@ -8,6 +8,9 @@ use App\Models\Item;
 class Modalwindow extends Component
 {
     public $showModalwindow = false;
+    public $itemId;
+
+    protected $listeners = ['checkPurchased', 'delete'];
 
     public function render()
     {
@@ -24,12 +27,11 @@ class Modalwindow extends Component
         $this->showModalwindow = false;
     }
 
-    public $itemId;
-
-    public function check_purchased($itemId)
+    public function checkPurchased($itemId)
     {
         $item = Item::findOrFail($itemId);
         $item->update(['purchased' => 1]);
+        $this->emit('checkPurchased', $itemId);
         $this->showModalwindow = false;
     }
 

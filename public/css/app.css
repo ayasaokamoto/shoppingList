@@ -166,7 +166,8 @@ header h1 {
     height: 40px;
     border-radius: 50%;
     border: none;
-    margin: 5px; /* アイコン間の余白を調整 */
+    margin: 5px;
+    position: relative;
 }
 
 
