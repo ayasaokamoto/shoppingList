@@ -33,11 +33,13 @@ class Modalwindow extends Component
         $item->update(['purchased' => 1]);
         $this->emit('checkPurchased', $itemId);
         $this->showModalwindow = false;
+        redirect('/dashboard');
     }
 
     public function delete($itemId)
     {
         Item::findOrFail($itemId)->delete();
         $this->showModalwindow = false;
+        redirect('/dashboard');
     }
 }

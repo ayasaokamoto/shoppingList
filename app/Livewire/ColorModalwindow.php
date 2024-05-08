@@ -66,6 +66,9 @@ class ColorModalwindow extends Component
     {
         // 削除処理を実行
         Color::where('user_id', auth()->id())->where('code', $colorToDelete)->delete();
+
+        // 削除したカラーに設定していたitemのカラーをデフォルトカラーに戻す
+
     }
 
 

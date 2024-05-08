@@ -23,5 +23,7 @@ class AddItem extends Component
             'contents' => 'テキスト',
             "purchased" => '0',
         ]);
+
+        redirect('/dashboard');
     }
 }
