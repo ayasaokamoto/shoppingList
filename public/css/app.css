@@ -53,19 +53,20 @@ header h1 {
 
 .tabs {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
     padding: 0;
     margin: 0;
+    width: 100%;
 }
 
 .tab {
     position: relative;
     padding: 10px 20px;
     cursor: pointer;
-    background-color: #ECCF36;
+    background-color:rgb(243 244 246 / var(--tw-bg-opacity));;
     display: flex;
-    flex: 1; /* 幅を均等に設定 */
+    width: calc(100% / 3);
     justify-content: center;
     border-top-right-radius: 50px; /* 右上の角を丸くする */
 }

@@ -3,6 +3,8 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\BoughtController;
+use App\Http\Controllers\UsualController;
 use App\Http\Controllers\ModalwindowController;
 
 Route::get('/', function () {
@@ -23,3 +25,5 @@ require __DIR__.'/auth.php';
 
 
 Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/bought', [BoughtController::class, 'index'])->middleware(['auth', 'verified'])->name('bought');
+Route::get('/usual', [UsualController::class, 'index'])->middleware(['auth', 'verified'])->name('usual');
